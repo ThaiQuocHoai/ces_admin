@@ -1,0 +1,37 @@
+.ant-menu.ant-menu-sub.ant-menu-inline {
+    background-color: #024f87
+}
+
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger{
+    background-color: #024f87
+}
+
+.ant-menu-title-content{
+    color: white
+}
+
+.ant-menu-submenu-title i{
+    color:white
+}
+
+.ant-menu-item a, .ant-menu-item span{
+    color: white
+}
+
+
+.ant-menu-item-selected{
+    background-color: #ff8224!important
+}
+
+.ant-menu-item-selected a:hover, .ant-menu-item-selected:hover .anticon{
+    color: black
+}
+
+.ant-menu-item a:hover, .ant-menu-item:hover .anticon{
+    color: black
+    
+}
+
+.ant-menu-item:hover{
+    background-color: #ff8224!important
+}
