@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Radio, DatePicker, Tabs } from "antd";
+import {  WarningOutlined, AudioOutlined } from '@ant-design/icons'
 import "../assets/css/userinfo.css";
 
 export default function UserInfo() {
   const { TabPane } = Tabs;
+
+  const { Search } = Input;
 
   function callback(key) {
     console.log(key);

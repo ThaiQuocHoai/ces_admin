@@ -3,13 +3,16 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import {
     UndoOutlined,
-    ToolOutlined
+    ToolOutlined,
+    AudioOutlined
 } from '@ant-design/icons'
 import { history } from '../App'
 
 export default function UpdateStatus() {
 
     const [isModalVisibleWarning, setIsModalVisibleWarning] = useState(false)
+
+    const { Search } = Input;
 
     const showModalWarning = () => {
         setIsModalVisibleWarning(true)
@@ -133,6 +136,9 @@ export default function UpdateStatus() {
                     <a href="/update">Danh sách tài khoản</a>
                 </Breadcrumb.Item>
             </Breadcrumb>
+
+            <Search placeholder="Nhập tên người dùng" style={{ width: 500, marginBottom: 20 }} />
+
             <Table dataSource={dataSource} columns={columns} />
             <Modal title="Cảnh báo" cancelText="Huỷ" okText="Cập nhật" visible={isModalVisibleWarning} onCancel={handleCancelWarning} onOk={() => {
                 handleOkWarning()

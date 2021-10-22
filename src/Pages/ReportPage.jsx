@@ -97,7 +97,7 @@ export default function ReportPage() {
             key: 'thoigian',
         },
         {
-            title: 'Trạng thái',
+            title: 'Trạng thái báo cáo',
             dataIndex: 'xemchitiet',
             key: 'xemchitiet',
         },
@@ -107,7 +107,7 @@ export default function ReportPage() {
             key: 'thoigianxuli',
         },
         {
-            title: 'Trạng thái hoạt động',
+            title: 'Trạng thái chiến dịch',
             dataIndex: 'hanhvi',
             key: 'hanhvi',
         },

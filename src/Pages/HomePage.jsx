@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Breadcrumb, Card, Progress, Modal, Button, Input } from 'antd'
-import {  WarningOutlined } from '@ant-design/icons'
+import {  WarningOutlined, AudioOutlined } from '@ant-design/icons'
 import { NavLink } from 'react-router-dom'
 
 export default function HomePage() {
 
+    const { Search } = Input;
 
     const [isModalVisible, setIsModalVisible] = useState(false)
 
@@ -31,7 +32,8 @@ export default function HomePage() {
                 </Breadcrumb>
             </div>
             <div className="mt-4">
-                <h2>Các chiến dịch đã tài trợ</h2>
+                <h2>Tất cả chiến dịch</h2>
+                <Search placeholder="Nhập tên chiến dịch" style={{ width: 500, marginBottom: 20 }} />
                 <div className="mb-4">
                     <Card title="Tiếp tế lương thực cho TP.HCM" extra={<div className="ml-3">
                         {/* <div style={{ cursor: 'pointer' }} onClick={showModal}>
