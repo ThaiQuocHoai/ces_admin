@@ -20,7 +20,7 @@ export default function VerifyAccount() {
             key: '2',
             name: 'Trần Thanh Dương',
             thoigian: '01:15 PM 17/10/2021',
-            trangthai: <span style={{ color: 'red' }}>Từ chối</span>,
+            trangthai: <span style={{ color: 'orange' }}>Chờ xác nhận</span>,
             chitiet: <NavLink to="/verifydetail">Xem chi tiết</NavLink>
         },
         {
